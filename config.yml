@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: Iafacilonline/iafacilonline-web
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Descripción corta", name: "excerpt", widget: "text" }
+      - { label: "Categoría", name: "category", widget: "select", options: ["Noticia IA", "Tutorial Práctico", "Serie Gratuita", "Reel"] }
+      - { label: "Portada", name: "image", widget: "image", required: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - name: "index"
+        label: "Página principal"
+        file: "index.html"
+        fields:
+          - { label: "Hero - Título", name: "hero_title", widget: "string" }
+          - { label: "Hero - Subtítulo", name: "hero_subtitle", widget: "text" }

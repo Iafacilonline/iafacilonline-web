@@ -1,113 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IAFácil Online | Servicios de IA para Partners Tecnológicos</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <!-- Decap CMS -->
-  <script src="https://cdn.decapscms.org/v2.0.0/decap-cms.js"></script>
+  <title>Panel de Administración - IAFácil Online</title>
 </head>
 <body>
-  <header class="main-header">
-    <div class="container">
-      <a href="/" class="logo"><span>IA</span>Fácil Online</a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#law">Ley IA</a></li>
-          <li><a href="#ebooks">eBooks</a></li>
-          <li><a href="#cursos">Cursos</a></li>
-          <li><a href="#reels">Reels</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="#founder">CEO</a></li>
-          <li><a href="#partner-zone">Partners</a></li>
-          <li><a href="#cases">Casos</a></li>
-          <li><a href="#contact">Contactar</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="hero">
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero-content fade-in">
-      <h1>Servicios de IA para <span>Partners Tecnológicos</span></h1>
-      <p>Ofrecemos soluciones white-label listas para que las integres bajo tu marca. Sin tecnicismos. Con soporte técnico incluido.</p>
-      <div class="cta-buttons">
-        <a href="#services" class="btn btn-primary">Ver Nuestros Servicios</a>
-        <a href="#law" class="btn btn-outline">Nueva Ley IA</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Secciones restantes (founder, partner-zone, law, ebooks, cursos, reels, services, blog, cases, contact, footer) -->
-  <!-- Estas secciones se generan dinámicamente desde el CMS, pero por ahora dejamos un placeholder -->
-
-  <section id="reels" class="fade-in">
-    <div class="container">
-      <h2 class="section-title">🎬 Reels de Impacto</h2>
-      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 40px;">
-        Contenido en movimiento — directo, sin filtros, para partners tecnológicos.
-      </p>
-      <div class="reels-grid" id="reels-container">
-        <!-- Los reels se cargarán aquí desde el CMS -->
-        <p style="text-align: center; color: var(--text-secondary); font-style: italic;">Cargando reels...</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog" class="fade-in">
-    <div class="container">
-      <h2 class="section-title">Blog IAFácil Online</h2>
-      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 40px;">
-        Artículos prácticos, noticias de IA y análisis para partners digitales.
-      </p>
-      <div class="services-grid" id="blog-posts-container">
-        <!-- Los posts se cargarán aquí desde el CMS -->
-        <p style="text-align: center; color: var(--text-secondary); font-style: italic;">Cargando artículos...</p>
-      </div>
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="/blog/" class="btn btn-primary">Ver Todos los Artículos del Blog</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container">
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/javierpuerta/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://wa.me/34637390803"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:gestion@iafacilonline.online"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.youtube.com/@IAFacilOnline" target="_blank"><i class="fab fa-youtube"></i></a>
-      </div>
-      <div class="footer-links">
-        <a href="/aviso-legal">Aviso Legal</a>
-        <a href="/politica-de-privacidad">Política de Privacidad</a>
-        <a href="/politica-de-cookies">Política de Cookies</a>
-      </div>
-      <p>&copy; 2026 IAFácil Online. Todos los derechos reservados.</p>
-      <div>
-        <a href="mailto:gestion@iafacilonline.online">gestion@iafacilonline.online</a> |
-        <a href="https://wa.me/34637390803">+34 637 390 803</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/assets/js/main.js"></script>
-  <script>
-    // Cargar posts y reels desde el CMS (simulado por ahora)
-    document.addEventListener('DOMContentLoaded', function() {
-      // Aquí iría la lógica para cargar contenido desde /admin/
-      // Por ahora, dejamos un mensaje estático
-      document.getElementById('reels-container').innerHTML = '<p style="text-align:center;color:var(--text-secondary);">Próximamente: nuevos reels publicados en nuestro blog.</p>';
-      document.getElementById('blog-posts-container').innerHTML = '<p style="text-align:center;color:var(--text-secondary);">Los artículos se cargarán automáticamente desde el panel de administración.</p>';
-    });
-  </script>
+  <script src="https://cdn.decapscms.org/v2.0.0/decap-cms.js"></script>
 </body>
 </html>
