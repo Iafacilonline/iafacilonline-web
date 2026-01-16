@@ -28,4 +28,5 @@ collections:
         file: "index.html"
         fields:
           - { label: "Hero - Título", name: "hero_title", widget: "string" }
+
           - { label: "Hero - Subtítulo", name: "hero_subtitle", widget: "text" }
