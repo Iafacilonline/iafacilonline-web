@@ -45,9 +45,6 @@
     </div>
   </section>
 
-  <!-- Secciones restantes (founder, partner-zone, law, ebooks, cursos, reels, services, blog, cases, contact, footer) -->
-  <!-- Estas secciones se generan dinámicamente desde el CMS, pero por ahora dejamos un placeholder -->
-
   <section id="reels" class="fade-in">
     <div class="container">
       <h2 class="section-title">🎬 Reels de Impacto</h2>
@@ -55,8 +52,7 @@
         Contenido en movimiento — directo, sin filtros, para partners tecnológicos.
       </p>
       <div class="reels-grid" id="reels-container">
-        <!-- Los reels se cargarán aquí desde el CMS -->
-        <p style="text-align: center; color: var(--text-secondary); font-style: italic;">Cargando reels...</p>
+        <p style="text-align:center;color:var(--text-secondary);">Próximamente: nuevos reels publicados en nuestro blog.</p>
       </div>
     </div>
   </section>
@@ -68,8 +64,9 @@
         Artículos prácticos, noticias de IA y análisis para partners digitales.
       </p>
       <div class="services-grid" id="blog-posts-container">
-        <!-- Los posts se cargarán aquí desde el CMS -->
-        <p style="text-align: center; color: var(--text-secondary); font-style: italic;">Cargando artículos...</p>
+        <p style="text-align:center;color:var(--text-secondary);">
+          Los artículos se cargarán automáticamente desde el panel de administración.
+        </p>
       </div>
       <div style="text-align: center; margin-top: 40px;">
         <a href="/blog/" class="btn btn-primary">Ver Todos los Artículos del Blog</a>
@@ -77,7 +74,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="main-footer">
     <div class="container">
       <div class="social-links">
@@ -100,14 +96,5 @@
   </footer>
 
   <script src="/assets/js/main.js"></script>
-  <script>
-    // Cargar posts y reels desde el CMS (simulado por ahora)
-    document.addEventListener('DOMContentLoaded', function() {
-      // Aquí iría la lógica para cargar contenido desde /admin/
-      // Por ahora, dejamos un mensaje estático
-      document.getElementById('reels-container').innerHTML = '<p style="text-align:center;color:var(--text-secondary);">Próximamente: nuevos reels publicados en nuestro blog.</p>';
-      document.getElementById('blog-posts-container').innerHTML = '<p style="text-align:center;color:var(--text-secondary);">Los artículos se cargarán automáticamente desde el panel de administración.</p>';
-    });
-  </script>
 </body>
 </html>
